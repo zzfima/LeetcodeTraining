@@ -24,7 +24,7 @@ namespace TestProject1
 			TwoSum twoSum = new TwoSum();
 
 			int[] nums = [3, 2, 4];
-			int[] expected = [2, 1];
+			int[] expected = [1, 2];
 			int target = 6;
 			int[] actual = twoSum.Algo1(nums, target);
 
