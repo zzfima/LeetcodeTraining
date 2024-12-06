@@ -13,5 +13,26 @@
 
 			return maxRevenue;
 		}
+
+		//not always works
+		public int SlidingWindowAlgo(int[] prices)
+		{
+			int maxRevenue = prices[prices.Length - 1] - prices[0];
+
+			for (int i = 0, j = prices.Length - 1; i < j;)
+			{
+				//Select which index moves
+				if (prices[j] - prices[i + 1] > prices[j - 1] - prices[i])
+					i++;
+				else
+					j--;
+
+				//calculate new max
+				if (prices[j] - prices[i] > maxRevenue)
+					maxRevenue = prices[j] - prices[i];
+			}
+
+			return maxRevenue;
+		}
 	}
 }
