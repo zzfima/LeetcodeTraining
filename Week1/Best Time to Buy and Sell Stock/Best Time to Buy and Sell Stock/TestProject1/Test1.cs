@@ -103,5 +103,17 @@ namespace TestProject1
 
             Assert.AreEqual(expected, actual);
         }
+
+        [TestMethod]
+        public void TestTwoPointersEachAfter4()
+        {
+            StocksBuy stocksBuy = new StocksBuy();
+
+            int[] prices = [12, 11, 16, 11, 0, 12, 11];
+            int expected = 12;
+            int actual = stocksBuy.TwoPointersEachAfterAlgo(prices);
+
+            Assert.AreEqual(expected, actual);
+        }
     }
 }
