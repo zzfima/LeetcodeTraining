@@ -68,6 +68,40 @@ namespace TestProject1
         }
         */
 
+        [TestMethod]
+        public void TestTwoPointersEachAfter1()
+        {
+            StocksBuy stocksBuy = new StocksBuy();
 
+            int[] prices = [7, 1, 5, 3, 6, 4];
+            int expected = 5;
+            int actual = stocksBuy.TwoPointersEachAfterAlgo(prices);
+
+            Assert.AreEqual(expected, actual);
+        }
+
+        [TestMethod]
+        public void TestTwoPointersEachAfter2()
+        {
+            StocksBuy stocksBuy = new StocksBuy();
+
+            int[] prices = [7, 6, 4, 3, 1];
+            int expected = 0;
+            int actual = stocksBuy.TwoPointersEachAfterAlgo(prices);
+
+            Assert.AreEqual(expected, actual);
+        }
+
+        [TestMethod]
+        public void TestTwoPointersEachAfter3()
+        {
+            StocksBuy stocksBuy = new StocksBuy();
+
+            int[] prices = [2, 1, 2, 1, 0, 2, 1];
+            int expected = 2;
+            int actual = stocksBuy.TwoPointersEachAfterAlgo(prices);
+
+            Assert.AreEqual(expected, actual);
+        }
     }
 }
