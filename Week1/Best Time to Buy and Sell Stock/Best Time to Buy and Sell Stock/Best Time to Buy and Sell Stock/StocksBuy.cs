@@ -15,7 +15,7 @@
 		}
 
 		//not always works
-		public int SlidingWindowAlgo(int[] prices)
+		public int TwoPointersFromEdgesAlgo(int[] prices)
 		{
 			int maxRevenue = prices[prices.Length - 1] - prices[0];
 
@@ -34,5 +34,7 @@
 
 			return maxRevenue;
 		}
+
+
 	}
 }

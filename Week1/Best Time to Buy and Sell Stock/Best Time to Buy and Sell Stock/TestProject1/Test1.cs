@@ -2,55 +2,72 @@
 
 namespace TestProject1
 {
-	[TestClass]
-	public sealed class Test1
-	{
-		[TestMethod]
-		public void TestMethodBruteForce1()
-		{
-			StocksBuy stocksBuy = new StocksBuy();
+    [TestClass]
+    public sealed class Test1
+    {
+        [TestMethod]
+        public void TestMethodBruteForce1()
+        {
+            StocksBuy stocksBuy = new StocksBuy();
 
-			int[] prices = [7, 1, 5, 3, 6, 4];
-			int expected = 5;
-			int actual = stocksBuy.BruteForceAlgo(prices);
+            int[] prices = [7, 1, 5, 3, 6, 4];
+            int expected = 5;
+            int actual = stocksBuy.BruteForceAlgo(prices);
 
-			Assert.AreEqual(expected, actual);
-		}
+            Assert.AreEqual(expected, actual);
+        }
 
-		[TestMethod]
-		public void TestMethodBruteForce2()
-		{
-			StocksBuy stocksBuy = new StocksBuy();
+        [TestMethod]
+        public void TestMethodBruteForce2()
+        {
+            StocksBuy stocksBuy = new StocksBuy();
 
-			int[] prices = [7,6,4,3,1];
-			int expected = 0;
-			int actual = stocksBuy.BruteForceAlgo(prices);
+            int[] prices = [7, 6, 4, 3, 1];
+            int expected = 0;
+            int actual = stocksBuy.BruteForceAlgo(prices);
 
-			Assert.AreEqual(expected, actual);
-		}
+            Assert.AreEqual(expected, actual);
+        }
 
-				[TestMethod]
-		public void TestSlidingWindoweForce1()
-		{
-			StocksBuy stocksBuy = new StocksBuy();
+        [TestMethod]
+        public void TestwoPointersFromEdges1()
+        {
+            StocksBuy stocksBuy = new StocksBuy();
 
-			int[] prices = [7, 1, 5, 3, 6, 4];
-			int expected = 5;
-			int actual = stocksBuy.SlidingWindowAlgo(prices);
+            int[] prices = [7, 1, 5, 3, 6, 4];
+            int expected = 5;
+            int actual = stocksBuy.TwoPointersFromEdgesAlgo(prices);
 
-			Assert.AreEqual(expected, actual);
-		}
+            Assert.AreEqual(expected, actual);
+        }
 
-		[TestMethod]
-		public void TestSlidingWindowForce2()
-		{
-			StocksBuy stocksBuy = new StocksBuy();
+        [TestMethod]
+        public void TestwoPointersFromEdges2()
+        {
+            StocksBuy stocksBuy = new StocksBuy();
 
-			int[] prices = [7,6,4,3,1];
-			int expected = 0;
-			int actual = stocksBuy.SlidingWindowAlgo(prices);
+            int[] prices = [7, 6, 4, 3, 1];
+            int expected = 0;
+            int actual = stocksBuy.TwoPointersFromEdgesAlgo(prices);
 
-			Assert.AreEqual(expected, actual);
-		}
-	}
+            Assert.AreEqual(expected, actual);
+        }
+
+        /*
+         * Fail
+        [TestMethod]
+        public void TestwoPointersFromEdges3()
+        {
+            StocksBuy stocksBuy = new StocksBuy();
+
+            int[] prices = [2, 1, 2, 1, 0, 2, 1];
+            int expected = 0;
+            int actual = stocksBuy.TwoPointersFromEdgesAlgo(prices);
+
+            Assert.AreEqual(expected, actual);
+        }
+        */
+
+
+    }
 }
