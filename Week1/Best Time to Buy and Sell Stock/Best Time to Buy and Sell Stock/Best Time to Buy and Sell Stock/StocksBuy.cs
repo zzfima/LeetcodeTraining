@@ -48,17 +48,17 @@
             int maxProfit = 0;
 
             // Traverse through the price array
-            foreach (int price in prices)
+            foreach (int todayPrice in prices)
             {
 
                 // Update the minimum price seen so far.
-                if (price < minPrice)
+                if (todayPrice < minPrice)
                 {
-                    minPrice = price;
+                    minPrice = todayPrice;
                 }
 
                 // Calculate potential profit if selling at the current price.
-                int profit = price - minPrice;
+                int profit = todayPrice - minPrice;
 
                 // Update the maximum profit if the current profit is greater.
                 if (profit > maxProfit)
