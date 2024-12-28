@@ -38,6 +38,7 @@ namespace Searches
 
             bool b = IsValueExists(t1, 9);
             int i = FindMin(t1);
+            int j = FindMax(t1);
         }
 
         private static int FindMin(TreeNode t1)
@@ -52,6 +53,20 @@ namespace Searches
             }
 
             return min;
+        }
+
+        private static int FindMax(TreeNode t1)
+        {
+            TreeNode treeNode = t1;
+            int max = 0;
+
+            while (treeNode != null)
+            {
+                max = treeNode.Value;
+                treeNode = treeNode.Right;
+            }
+
+            return max;
         }
 
         private static bool IsValueExists(TreeNode t1, int v)
