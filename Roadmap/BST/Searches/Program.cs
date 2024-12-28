@@ -1,4 +1,5 @@
 ﻿
+
 namespace Searches
 {
     internal class Program
@@ -36,6 +37,21 @@ namespace Searches
             t4.Left = t7;
 
             bool b = IsValueExists(t1, 9);
+            int i = FindMin(t1);
+        }
+
+        private static int FindMin(TreeNode t1)
+        {
+            TreeNode treeNode = t1;
+            int min = 0;
+
+            while (treeNode != null)
+            {
+                min = treeNode.Value;
+                treeNode = treeNode.Left;
+            }
+
+            return min;
         }
 
         private static bool IsValueExists(TreeNode t1, int v)
