@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MaximumBinaryTreeDepth", "M
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "find-the-k-th-character-in-string-game-i", "find-the-k-th-character-in-string-game-i\find-the-k-th-character-in-string-game-i.csproj", "{491FA78E-4AA7-459F-BF2B-BCE40B043155}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Factorial", "Factorial\Factorial.csproj", "{F7080A37-5387-4945-9F6A-00325FF3DE77}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{491FA78E-4AA7-459F-BF2B-BCE40B043155}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{491FA78E-4AA7-459F-BF2B-BCE40B043155}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{491FA78E-4AA7-459F-BF2B-BCE40B043155}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F7080A37-5387-4945-9F6A-00325FF3DE77}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F7080A37-5387-4945-9F6A-00325FF3DE77}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F7080A37-5387-4945-9F6A-00325FF3DE77}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F7080A37-5387-4945-9F6A-00325FF3DE77}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
