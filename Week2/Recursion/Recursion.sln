@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FindMaxNumber", "FindMaxNum
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CompareTrees", "CompareTrees\CompareTrees.csproj", "{DA624078-B177-4A92-8FF6-74847AAFF5B2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GetSum", "GetSum\GetSum.csproj", "{C5694A55-326E-41D0-8647-FC566BCED2F8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{DA624078-B177-4A92-8FF6-74847AAFF5B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DA624078-B177-4A92-8FF6-74847AAFF5B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DA624078-B177-4A92-8FF6-74847AAFF5B2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C5694A55-326E-41D0-8647-FC566BCED2F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C5694A55-326E-41D0-8647-FC566BCED2F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C5694A55-326E-41D0-8647-FC566BCED2F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C5694A55-326E-41D0-8647-FC566BCED2F8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
