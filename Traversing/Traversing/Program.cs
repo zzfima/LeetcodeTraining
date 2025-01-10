@@ -24,6 +24,10 @@ namespace Traversing
             //PostOrder: left->right->root
             PostOrder(tree);
             Console.WriteLine();
+
+            //Level order: level by level
+            Levelrder(tree);
+            Console.WriteLine();
         }
 
         private static void PreOrder(TreeNode tree)
@@ -48,6 +52,22 @@ namespace Traversing
             PostOrder(tree.Left);
             PostOrder(tree.Right);
             Console.Write(tree.Val + " ");
+        }
+
+        private static void Levelrder(TreeNode tree)
+        {
+            if (tree == null) return;
+            Queue<TreeNode> queue = new Queue<TreeNode>();
+            queue.Enqueue(tree);
+
+            while (queue.Count > 0)
+            {
+                var e = queue.Dequeue();
+                Console.Write(e.Val + " ");
+
+                if (e.Left != null) queue.Enqueue(e.Left);
+                if (e.Right != null) queue.Enqueue(e.Right);
+            }
         }
     }
 }
