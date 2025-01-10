@@ -69,6 +69,25 @@
             return dotProduct;
         }
 
+        // Addition with another sparse vector
+        public SparseVector Add(SparseVector other)
+        {
+            if (other.Dimension != Dimension)
+                throw new ArgumentException("Vectors must have the same dimension to perform addition.");
+
+            var result = new SparseVector(Dimension);
+
+            // Add non-zero elements from this vector
+            foreach (var (index, value) in _values)
+                result.SetValue(index, value);
+
+            // Add non-zero elements from the other vector
+            foreach (var (index, value) in other._values)
+                result.SetValue(index, result.GetValue(index) + value);
+
+            return result;
+        }
+
         // Override ToString for visualization
         public override string ToString()
         {
@@ -98,6 +117,10 @@
 
             double dotProduct = vector1.DotProduct(vector2);
             Console.WriteLine($"Dot Product: {dotProduct}");
+
+            var vector3 = vector1.Add(vector2);
+            Console.WriteLine($"Vector 1 + Vector 2: {vector3}");
+
             Console.Read();
         }
     }
